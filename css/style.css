@@ -1,10 +1,14 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Banner */
 
 .banner {
 	height: 100vh;
+	min-height: 600px;
 	background-image: url("https://i.ibb.co/HNvHSyV/image-header.jpg");
 	background-position: center bottom;
 	background-size: cover;
@@ -13,7 +17,7 @@
 }
 .header {
 	display: flex;
-	height: 55px;
+	height: 60px;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 25px;
@@ -25,12 +29,13 @@
 	align-items: center;
 }
 .menu span {
-	margin-right: 25px;
+	margin-right: 30px;
+	cursor: pointer;
 }
 .contact-btn {
 	background-color: #fff;
 	color: #000;
-	padding: 5px 10px;
+	padding: 8px 20px;
 	border-radius: 20px;
 	cursor: pointer;
 	transition: 0.2s all ease-in-out;
@@ -46,4 +51,108 @@
 	flex-grow: 1;
 	font-size: 50px;
 	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+.arrow {
+	margin-top: 30px;
+}
+/* Banner Ends */
+
+/* Section 1 */
+
+.section1 {
+	display: flex;
+	height: 350px;
+}
+
+.section1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.section1 .left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.left,
+.right {
+	flex: 1;
+}
+
+.section1 .text {
+	width: 70%;
+}
+.section1 .left h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.section1 .left p {
+	color: #848391;
+	line-height: 1.8;
+	margin-bottom: 15px;
+}
+
+.left .learn_more-btn img {
+	width: 150px;
+	cursor: pointer;
+}
+
+/* .left dev img {
+	width: 150px;
+} */
+/* Section 1 Ends */
+
+/* Section 3 */
+.section3 {
+	display: flex;
+	height: 350px;
+}
+/* .section3 {
+	width: 625px;
+}
+
+.section3 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+/* } */
+/* .section3 .right img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+} */
+
+.section3 .left {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+		url(/images/image-graphic-design.jpg);
+	padding: 10px 30px;
+	color: #fff;
+}
+
+.section3 .right {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+		url(/images/image-photography.jpg);
+	padding: 10px 30px;
+	color: #fff;
+}
+
+.section3 h1 {
+	font-size: 45px;
+	text-transform: capitalize;
+	margin: 15px;
+}
+
+.section3 .left,
+.section3 .right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section3 .text-content {
+	text-align: center;
 }
